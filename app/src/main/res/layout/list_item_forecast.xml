@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</LinearLayout>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Today - Sunny - 88/63"
+    android:id="@+id/list_item_forecast_textview"
+    android:gravity="center_vertical"
+    android:background="#c2dae9"
+    android:padding="10dp"
+    android:nestedScrollingEnabled="false"
+    android:minHeight="?android:attr/listPreferredItemHeight" />

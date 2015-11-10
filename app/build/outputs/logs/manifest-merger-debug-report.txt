@@ -13,6 +13,10 @@ ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManif
 	android:versionCode
 		INJECTED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml
 		INJECTED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:4:22-64
 application
 ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:5:5-21:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] /home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:22:5-20

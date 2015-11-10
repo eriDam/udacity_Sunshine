@@ -9,20 +9,6 @@
         <dex dex="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/pre-dexed/debug/classes-76aa9c482e2a7c212fa6f71eae29270213461da8.jar" />
     </item>
     <item
-        jar="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/pre-dexed/debug/classes-1ad2d4d06e97eaa7a6e1b81fc333618ef767fbaf.jar" />
-    </item>
-    <item
-        jar="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/pre-dexed/debug/classes-75e4ba7b527823cfe1e0ea977fe137b230a985d8.jar" />
-    </item>
-    <item
         jar="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -42,6 +28,20 @@
         revision="23.0.2"
         sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
         <dex dex="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/pre-dexed/debug/classes-cec23fd1c433d9fdd1c9c9ce9cdfe40484e5642f.jar" />
+    </item>
+    <item
+        jar="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/pre-dexed/debug/classes-1ad2d4d06e97eaa7a6e1b81fc333618ef767fbaf.jar" />
+    </item>
+    <item
+        jar="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/pre-dexed/debug/classes-75e4ba7b527823cfe1e0ea977fe137b230a985d8.jar" />
     </item>
 
 </items>

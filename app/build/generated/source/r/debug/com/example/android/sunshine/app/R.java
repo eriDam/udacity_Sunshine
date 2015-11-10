@@ -2214,6 +2214,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c0057;
         public static final int action_mode_bar_stub=0x7f0c0056;
         public static final int action_mode_close_button=0x7f0c003c;
+        public static final int action_refresh=0x7f0c0083;
         public static final int action_settings=0x7f0c0082;
         public static final int activity_chooser_view_content=0x7f0c003d;
         public static final int alertTitle=0x7f0c0049;
@@ -2394,12 +2395,14 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040033;
     }
     public static final class menu {
-        public static final int main=0x7f0d0000;
+        public static final int forecast_fragment=0x7f0d0000;
     }
     public static final class mipmap {
-        public static final int ic_launcher=0x7f030000;
+        public static final int action_refresh=0x7f030000;
+        public static final int ic_launcher=0x7f030001;
     }
     public static final class string {
+        public static final int Refresh=0x7f060014;
         public static final int abc_action_bar_home_description=0x7f060000;
         public static final int abc_action_bar_home_description_format=0x7f060001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f060002;
@@ -2419,10 +2422,11 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f060010;
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
-        public static final int action_settings=0x7f060014;
-        public static final int app_name=0x7f060015;
-        public static final int appbar_scrolling_view_behavior=0x7f060016;
-        public static final int character_counter_pattern=0x7f060017;
+        public static final int action_settings=0x7f060015;
+        public static final int app_name=0x7f060016;
+        public static final int appbar_scrolling_view_behavior=0x7f060017;
+        public static final int character_counter_pattern=0x7f060018;
+        public static final int refresh=0x7f060019;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

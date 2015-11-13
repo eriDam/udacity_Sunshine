@@ -3,4 +3,14 @@
     <string name="action_settings">Settings</string>
     <string name="refresh">refresh</string>
     <string name="Refresh">Refresh</string>
+
+    <string-array name="items">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturdary</item>
+        <item>Sunday</item>
+    </string-array>
 </resources>

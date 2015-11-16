@@ -92,6 +92,7 @@ public class ForecastFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         //setup Views
         // Get a reference to the ListView, and attach this adapter to it.
+        //Get the forecast by calling getItem from the forecastAdapter.
         ListView listview = (ListView) rootView.findViewById(R.id.listview_forecast);
         listview.setAdapter(mForecastAdapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {

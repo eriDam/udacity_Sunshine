@@ -336,6 +336,7 @@
     <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_settings">Settings</string>
     <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

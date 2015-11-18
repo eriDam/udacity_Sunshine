@@ -1,7 +1,6 @@
 package com.example.android.sunshine.app;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -69,6 +68,7 @@ public class ForecastFragment extends Fragment {
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -77,44 +77,8 @@ public class ForecastFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         //Create an ArrayList
-        Resources res = getResources();
-        String[] forecastArray = res.getStringArray(R.array.items);
-
-        List<String> weekForecast = new ArrayList<>(Arrays.asList(forecastArray));
-
-        for (int i = 0; i <= forecastArray.length; i++) {
-
-            Log.i("Item ", String.valueOf(i));
-
-        }
-
-        mForecastAdapter = new ArrayAdapter<>(getActivity(), R.layout.list_item_forecast,
-                R.id.list_item_forecast_textview, weekForecast);
-
-        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        //setup Views
-        // Get a reference to the ListView, and attach this adapter to it.
-        //Get the forecast by calling getItem from the forecastAdapter.
-        ListView listview = (ListView) rootView.findViewById(R.id.listview_forecast);
-        listview.setAdapter(mForecastAdapter);
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String forecast = mForecastAdapter.getItem(position);
-                //3.02 Add Toast message
-                //Toast.makeText(getActivity(), forecast, Toast.LENGTH_SHORT).show();
-
-               //Create explicit intent to launch/open DetailActivity
-                Intent intent = new Intent(getActivity(), DetailActivity.class).putExtra(Intent.EXTRA_TEXT, forecast);
-                 startActivity(intent);
-            }
-        });
-        // return inflater.inflate(R.layout.fragment_main, container, false);
-        return rootView;
-    }
-
-                // Create some dummy data for the ListView.  Here's a sample weekly forecast
-      /*  String[] data = {
+        // Create some dummy data for the ListView.  Here's a sample weekly forecast
+        String[] data = {
                 "Mon 6/23 - Sunny - 31/17",
                 "Tue 6/24 - Foggy - 21/8",
                 "Wed 6/25 - Cloudy - 22/17",
@@ -124,11 +88,11 @@ public class ForecastFragment extends Fragment {
                 "Sun 6/29 - Sunny - 20/7"
         };
         List<String> weekForecast = new ArrayList<String>(Arrays.asList(data));
-    */
+
         // Now that we have some dummy forecast data, create an ArrayAdapter.
         // The ArrayAdapter will take data from a source (like our dummy forecast) and
         // use it to populate the ListView it's attached to.
-        /*mForecastAdapter =
+        mForecastAdapter =
                 new ArrayAdapter<String>(
                         getActivity(), // The current context (this activity)
                         R.layout.list_item_forecast, // The name of the layout ID.
@@ -140,9 +104,24 @@ public class ForecastFragment extends Fragment {
         // Get a reference to the ListView, and attach this adapter to it.
         ListView listView = (ListView) rootView.findViewById(R.id.listview_forecast);
         listView.setAdapter(mForecastAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String forecast = mForecastAdapter.getItem(position);
+                //3.02 Add Toast message comment
+                //Toast.makeText(getActivity(), forecast, Toast.LENGTH_SHORT).show();
 
+               //Create explicit intent to launch/open DetailActivity
+                Intent intent = new Intent(getActivity(), DetailActivity.class)
+                        .putExtra(Intent.EXTRA_TEXT, forecast);
+                 startActivity(intent);
+            }
+        });
+        // return inflater.inflate(R.layout.fragment_main, container, false);
         return rootView;
-    }*/
+    }
+
+
 
     public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
 
@@ -355,8 +334,8 @@ public class ForecastFragment extends Fragment {
                                 for(String dayForecastStr : result) {
                                        mForecastAdapter.add(dayForecastStr);
                                     }
-                               // New data is back from the server.  Hooray!
+                               // New data is back from the server
                                   }
-                    }
+                       }
     }
 }

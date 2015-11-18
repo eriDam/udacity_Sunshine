@@ -9,7 +9,7 @@
     <!-- Behaivors to the menu: app:showAsAction = never, ifRoom, always -->
     <item
         android:id="@+id/action_refresh"
-        android:title="@string/Refresh"
+        android:title="@string/refresh"
         android:icon="@mipmap/action_refresh"
         android:orderInCategory="80" app:showAsAction="never" />
 </menu>

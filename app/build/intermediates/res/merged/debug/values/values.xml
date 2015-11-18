@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <string-array name="items">
-        <item>Monday</item>
-        <item>Tuesday</item>
-        <item>Wednesday</item>
-        <item>Thursday</item>
-        <item>Friday</item>
-        <item>Saturdary</item>
-        <item>Sunday</item>
-    </string-array>
     <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -295,11 +284,6 @@
     <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <string name="Refresh">Refresh</string>
-    <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
-    <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -329,7 +313,10 @@
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
     <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="refresh">refresh</string>
+    <string name="pref_location_default" translatable="false">Valencia,ESP</string>
+    <string name="pref_location_key" translatable="false">location</string>
+    <string name="pref_location_label">Location</string>
+    <string name="refresh">Refresh</string>
     <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>

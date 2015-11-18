@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--This element contains the string from the strings file. showAsAction="always" because i like that it's present in the
+bar always.
+ShareActionProvider it's for to be used on earlier versions of Android 4.0-->
+      <item android:id="@+id/action_share"
+          android:title="@string/action_share"
+          app:showAsAction="always"
+          app:actionProviderClass="android.support-V7.widget.ShareActionProvider"/>
+</menu>

@@ -2219,8 +2219,9 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0e0057;
         public static final int action_mode_bar_stub=0x7f0e0056;
         public static final int action_mode_close_button=0x7f0e003c;
-        public static final int action_refresh=0x7f0e0086;
+        public static final int action_refresh=0x7f0e0087;
         public static final int action_settings=0x7f0e0084;
+        public static final int action_share=0x7f0e0086;
         public static final int activity_chooser_view_content=0x7f0e003d;
         public static final int alertTitle=0x7f0e0049;
         public static final int always=0x7f0e0032;
@@ -2406,8 +2407,9 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int detail=0x7f0f0000;
-        public static final int forecast_fragment=0x7f0f0001;
-        public static final int main=0x7f0f0002;
+        public static final int detailfragment=0x7f0f0001;
+        public static final int forecast_fragment=0x7f0f0002;
+        public static final int main=0x7f0f0003;
     }
     public static final class mipmap {
         public static final int action_refresh=0x7f030000;
@@ -2435,22 +2437,23 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f070012;
         public static final int action_map=0x7f070014;
         public static final int action_settings=0x7f070015;
-        public static final int app_name=0x7f070016;
-        public static final int appbar_scrolling_view_behavior=0x7f070017;
-        public static final int character_counter_pattern=0x7f070018;
-        public static final int pref_location_default=0x7f070019;
-        public static final int pref_location_key=0x7f07001a;
-        public static final int pref_location_label=0x7f07001b;
-        public static final int pref_units_imperial=0x7f07001c;
-        public static final int pref_units_key=0x7f07001d;
-        public static final int pref_units_label=0x7f07001e;
-        public static final int pref_units_label_imperial=0x7f07001f;
-        public static final int pref_units_label_metric=0x7f070020;
-        public static final int pref_units_metric=0x7f070021;
-        public static final int refresh=0x7f070022;
+        public static final int action_share=0x7f070016;
+        public static final int app_name=0x7f070017;
+        public static final int appbar_scrolling_view_behavior=0x7f070018;
+        public static final int character_counter_pattern=0x7f070019;
+        public static final int pref_location_default=0x7f07001a;
+        public static final int pref_location_key=0x7f07001b;
+        public static final int pref_location_label=0x7f07001c;
+        public static final int pref_units_imperial=0x7f07001d;
+        public static final int pref_units_key=0x7f07001e;
+        public static final int pref_units_label=0x7f07001f;
+        public static final int pref_units_label_imperial=0x7f070020;
+        public static final int pref_units_label_metric=0x7f070021;
+        public static final int pref_units_metric=0x7f070022;
+        public static final int refresh=0x7f070023;
         public static final int status_bar_notification_info_overflow=0x7f070013;
-        public static final int title_activity_detail=0x7f070023;
-        public static final int title_activity_settings=0x7f070024;
+        public static final int title_activity_detail=0x7f070024;
+        public static final int title_activity_settings=0x7f070025;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a007f;

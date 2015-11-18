@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="pref_units_options">
+            <item>@string/pref_units_label_metric</item>
+            <item>@string/pref_units_label_imperial</item>
+        </string-array>
+    <string-array name="pref_units_values">
+           <item>@string/pref_units_metric</item>
+           <item>@string/pref_units_imperial</item>
+        </string-array>
     <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -316,6 +326,12 @@
     <string name="pref_location_default" translatable="false">Valencia,ESP</string>
     <string name="pref_location_key" translatable="false">location</string>
     <string name="pref_location_label">Location</string>
+    <string name="pref_units_imperial" translatable="false">imperial</string>
+    <string name="pref_units_key" translatable="false">units</string>
+    <string name="pref_units_label">Temperature Units</string>
+    <string name="pref_units_label_imperial">Imperial</string>
+    <string name="pref_units_label_metric">Metric</string>
+    <string name="pref_units_metric" translatable="false">metric</string>
     <string name="refresh">Refresh</string>
     <!-- From: file:/home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>

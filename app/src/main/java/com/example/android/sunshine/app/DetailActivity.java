@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.ShareActionProvider;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,7 +18,8 @@ import android.widget.TextView;
 
 
 
-public class DetailActivity extends ActionBarActivity {
+public class DetailActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,8 @@ public class DetailActivity extends ActionBarActivity {
         private static final String FORECAST_SHARE_HASHTAG = " #SunshineApp";
         //Make a member variable mForecastStr
         private String mForecastStr;
+        ShareActionProvider mShareActionProvider;
+
 
         public DetailFragment() {
             setHasOptionsMenu(true);
@@ -97,8 +100,7 @@ public class DetailActivity extends ActionBarActivity {
                                         MenuItem menuItem = menu.findItem(R.id.action_share);
 
                                // Get the provider and hold onto it to set/change the share intent.
-                                      ShareActionProvider mShareActionProvider =
-                                       (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
+                                      mShareActionProvider =(ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
 
                                 // Attach an intent to this ShareActionProvider.  You can update this at any time,
                                         // like when the user selects a new piece of data they might like to share.
@@ -115,7 +117,14 @@ public class DetailActivity extends ActionBarActivity {
                         shareIntent.setType("text/plain");
                         shareIntent.putExtra(Intent.EXTRA_TEXT,
                                         mForecastStr + FORECAST_SHARE_HASHTAG);
+                            setShareIntent(shareIntent);
                         return shareIntent;
                     }
+
+        private void setShareIntent(Intent shareIntent){
+            if (mShareActionProvider != null){
+                mShareActionProvider.setShareIntent(shareIntent);
+            }
+        }
     }
 }

@@ -7,5 +7,5 @@ ShareActionProvider it's for to be used on earlier versions of Android 4.0-->
       <item android:id="@+id/action_share"
           android:title="@string/action_share"
           app:showAsAction="always"
-          app:actionProviderClass="android.support-V7.widget.ShareActionProvider"/>
+          app:actionProviderClass="android.support.V7.widget.ShareActionProvider"/>
 </menu>

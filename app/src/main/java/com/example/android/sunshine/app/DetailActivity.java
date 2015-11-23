@@ -89,6 +89,7 @@ public class DetailActivity extends AppCompatActivity {
                     .setText(mForecastStr);
         }
             return rootView;
+
         }
 
         @Override
@@ -134,7 +135,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onStart() {
         // TODO Auto-generated method stub
         super.onStart();
-        Log.i(LOG_TAG, "on create");
+        Log.i(LOG_TAG, "onStart");
         Log.d(LOG_TAG, "Debug");
         Log.e(LOG_TAG, "Error");
         Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
@@ -145,7 +146,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onResume() {
         // TODO Auto-generated method stub
         super.onResume();
-        Log.i(LOG_TAG, "on create");
+        Log.i(LOG_TAG, "onResume");
         Log.d(LOG_TAG, "Debug");
         Log.e(LOG_TAG, "Error");
         Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
@@ -155,7 +156,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onPause () {
         // TODO Auto-generated method stub
         super.onPause();
-        Log.i(LOG_TAG, "on create");
+        Log.i(LOG_TAG, "onPause");
         Log.d(LOG_TAG, "Debug");
         Log.e(LOG_TAG, "Error");
         Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
@@ -166,7 +167,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onStop () {
         // TODO Auto-generated method stub
         super.onStop();
-        Log.i(LOG_TAG, "on create");
+        Log.i(LOG_TAG, "onStop");
         Log.d(LOG_TAG, "Debug");
         Log.e(LOG_TAG, "Error");
         Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
@@ -177,7 +178,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onRestart () {
         // TODO Auto-generated method stub
         super.onRestart();
-        Log.i(LOG_TAG, "on create");
+        Log.i(LOG_TAG, "onRestart");
         Log.d(LOG_TAG, "Debug");
         Log.e(LOG_TAG, "Error");
         Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
@@ -187,7 +188,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onDestroy () {
         // TODO Auto-generated method stub
         super.onDestroy();
-        Log.i(LOG_TAG, "on create");
+        Log.i(LOG_TAG, "onDestroy");
         Log.d(LOG_TAG, "Debug");
         Log.e(LOG_TAG, "Error");
         Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");

@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
 
-
+    private final String LOG_TAG = DetailActivity.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,5 +126,71 @@ public class DetailActivity extends AppCompatActivity {
                 mShareActionProvider.setShareIntent(shareIntent);
             }
         }
+    }
+
+    //Generamos e incorporamos los metodos de Log, automaticamente desde botón dcho source-Override/Implement methodes
+    //Override, en realidad ni sobrecarga ni sustituye, le dice al compilador que haga caso a este método y no al del padre
+    @Override
+    protected void onStart() {
+        // TODO Auto-generated method stub
+        super.onStart();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+    }
+
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+        super.onResume();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+    }
+    @Override
+    protected void onPause () {
+        // TODO Auto-generated method stub
+        super.onPause();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+    }
+
+    @Override
+    protected void onStop () {
+        // TODO Auto-generated method stub
+        super.onStop();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+    }
+
+    @Override
+    protected void onRestart () {
+        // TODO Auto-generated method stub
+        super.onRestart();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+    }
+    @Override
+    protected void onDestroy () {
+        // TODO Auto-generated method stub
+        super.onDestroy();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
     }
 }

@@ -34,7 +34,7 @@ import java.util.ArrayList;
  * Encapsulates fetching the forecast and displaying it as a {@link ListView} layout.
  */
 public class ForecastFragment extends Fragment {
-
+    private final String LOG_TAG = ForecastFragment.class.getSimpleName();
     private ArrayAdapter<String> mForecastAdapter = null;
 
     public ForecastFragment() {
@@ -82,6 +82,11 @@ public class ForecastFragment extends Fragment {
     public void onStart(){
         super.onStart();
         updateWeather();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
     }
 
 
@@ -368,4 +373,9 @@ public class ForecastFragment extends Fragment {
                                   }
                        }
     }
+
+
+
+
+    
 }

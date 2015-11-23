@@ -21,6 +21,8 @@ import android.preference.PreferenceManager;
 public class SettingsActivity extends PreferenceActivity
         implements Preference.OnPreferenceChangeListener {
 
+    private final String LOG_TAG = SettingsActivity.class.getSimpleName();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,5 +72,6 @@ public class SettingsActivity extends PreferenceActivity
         }
         return true;
     }
+
 
 }

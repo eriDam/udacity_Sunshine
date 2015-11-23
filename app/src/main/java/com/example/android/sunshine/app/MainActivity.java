@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 //        if (savedInstanceState == null) {
 //            getSupportFragmentManager().beginTransaction()
 //                    .add(R.id.container, new ForecastFragment())
@@ -38,17 +39,27 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        //The Log is the tool to control or to debug our app
+        //They are nothing more than reading what is happening in our application.
+        //Log incorporate the end of each method activity android
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.forecast_fragment, menu);
         return true;
     }
+
     @Override
-    public boolean onOptionsItemSelected (MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -88,4 +99,71 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Log.d(LOG_TAG, "Couldn't call " + location + ", no receiving apps installed!");
         }
-    } }
+    }
+
+    //Generamos e incorporamos los metodos de Log, automaticamente desde botón dcho source-Override/Implement methodes
+    //Override, en realidad ni sobrecarga ni sustituye, le dice al compilador que haga caso a este método y no al del padre
+    @Override
+    protected void onStart() {
+        // TODO Auto-generated method stub
+        super.onStart();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+    }
+
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+        super.onResume();
+        Log.i(LOG_TAG, "on create");
+        Log.d(LOG_TAG, "Debug");
+        Log.e(LOG_TAG, "Error");
+        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+    }
+        @Override
+        protected void onPause () {
+            // TODO Auto-generated method stub
+            super.onPause();
+            Log.i(LOG_TAG, "on create");
+            Log.d(LOG_TAG, "Debug");
+            Log.e(LOG_TAG, "Error");
+            Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+            Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+        }
+
+        @Override
+        protected void onStop () {
+            // TODO Auto-generated method stub
+            super.onStop();
+            Log.i(LOG_TAG, "on create");
+            Log.d(LOG_TAG, "Debug");
+            Log.e(LOG_TAG, "Error");
+            Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+            Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+        }
+
+        @Override
+        protected void onRestart () {
+            // TODO Auto-generated method stub
+            super.onRestart();
+            Log.i(LOG_TAG, "on create");
+            Log.d(LOG_TAG, "Debug");
+            Log.e(LOG_TAG, "Error");
+            Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+            Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+        }
+        @Override
+        protected void onDestroy () {
+            // TODO Auto-generated method stub
+            super.onDestroy();
+            Log.i(LOG_TAG, "on create");
+            Log.d(LOG_TAG, "Debug");
+            Log.e(LOG_TAG, "Error");
+            Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
+            Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
+        }
+    }

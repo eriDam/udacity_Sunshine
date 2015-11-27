@@ -154,6 +154,7 @@ public class WeatherProvider extends ContentProvider {
         }
     }
 
+    //Query will be the most complex of the required content provider methods
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs,
                         String sortOrder) {

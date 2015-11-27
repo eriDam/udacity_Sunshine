@@ -23,6 +23,7 @@ import android.test.AndroidTestCase;
 import com.example.android.sunshine.app.data.WeatherContract.LocationEntry;
 import com.example.android.sunshine.app.data.WeatherContract.WeatherEntry;
 
+
 /*
     Note: This is not a complete set of tests of the Sunshine ContentProvider, but it does test
     that at least the basic functionality has been implemented correctly.
@@ -139,35 +140,35 @@ public class TestProvider extends AndroidTestCase {
 //            Students: Uncomment this test to verify that your implementation of GetType is
 //            functioning correctly.
 //         */
-//    public void testGetType() {
-//        // content://com.example.android.sunshine.app/weather/
-//        String type = mContext.getContentResolver().getType(WeatherEntry.CONTENT_URI);
-//        // vnd.android.cursor.dir/com.example.android.sunshine.app/weather
-//        assertEquals("Error: the WeatherEntry CONTENT_URI should return WeatherEntry.CONTENT_TYPE",
-//                WeatherEntry.CONTENT_TYPE, type);
+//public void testGetType() {
+//    // content://com.example.android.sunshine.app/weather/
+//    String type = mContext.getContentResolver().getType(WeatherEntry.CONTENT_URI);
+//    // vnd.android.cursor.dir/com.example.android.sunshine.app/weather
+//    assertEquals("Error: the WeatherEntry CONTENT_URI should return WeatherEntry.CONTENT_TYPE",
+//            WeatherEntry.CONTENT_TYPE, type);
 //
-//        String testLocation = "94074";
-//        // content://com.example.android.sunshine.app/weather/94074
-//        type = mContext.getContentResolver().getType(
-//                WeatherEntry.buildWeatherLocation(testLocation));
-//        // vnd.android.cursor.dir/com.example.android.sunshine.app/weather
-//        assertEquals("Error: the WeatherEntry CONTENT_URI with location should return WeatherEntry.CONTENT_TYPE",
-//                WeatherEntry.CONTENT_TYPE, type);
+//    String testLocation = "94074";
+//    // content://com.example.android.sunshine.app/weather/94074
+//    type = mContext.getContentResolver().getType(
+//            WeatherEntry.buildWeatherLocation(testLocation));
+//    // vnd.android.cursor.dir/com.example.android.sunshine.app/weather
+//    assertEquals("Error: the WeatherEntry CONTENT_URI with location should return WeatherEntry.CONTENT_TYPE",
+//            WeatherEntry.CONTENT_TYPE, type);
 //
-//        long testDate = 1419120000L; // December 21st, 2014
-//        // content://com.example.android.sunshine.app/weather/94074/20140612
-//        type = mContext.getContentResolver().getType(
-//                WeatherEntry.buildWeatherLocationWithDate(testLocation, testDate));
-//        // vnd.android.cursor.item/com.example.android.sunshine.app/weather/1419120000
-//        assertEquals("Error: the WeatherEntry CONTENT_URI with location and date should return WeatherEntry.CONTENT_ITEM_TYPE",
-//                WeatherEntry.CONTENT_ITEM_TYPE, type);
+//    long testDate = 1419120000L; // December 21st, 2014
+//    // content://com.example.android.sunshine.app/weather/94074/20140612
+//    type = mContext.getContentResolver().getType(
+//            WeatherEntry.buildWeatherLocationWithDate(testLocation, testDate));
+//    // vnd.android.cursor.item/com.example.android.sunshine.app/weather/1419120000
+//    assertEquals("Error: the WeatherEntry CONTENT_URI with location and date should return WeatherEntry.CONTENT_ITEM_TYPE",
+//            WeatherEntry.CONTENT_ITEM_TYPE, type);
 //
-//        // content://com.example.android.sunshine.app/location/
-//        type = mContext.getContentResolver().getType(LocationEntry.CONTENT_URI);
-//        // vnd.android.cursor.dir/com.example.android.sunshine.app/location
-//        assertEquals("Error: the LocationEntry CONTENT_URI should return LocationEntry.CONTENT_TYPE",
-//                LocationEntry.CONTENT_TYPE, type);
-//    }
+//    // content://com.example.android.sunshine.app/location/
+//    type = mContext.getContentResolver().getType(LocationEntry.CONTENT_URI);
+//    // vnd.android.cursor.dir/com.example.android.sunshine.app/location
+//    assertEquals("Error: the LocationEntry CONTENT_URI should return LocationEntry.CONTENT_TYPE",
+//            LocationEntry.CONTENT_TYPE, type);
+//}
 //
 //
 //    /*
@@ -401,10 +402,10 @@ public class TestProvider extends AndroidTestCase {
 //    }
 
     // Make sure we can still delete after adding/updating stuff
-    //
-    // Student: Uncomment this test after you have completed writing the delete functionality
-    // in your provider.  It relies on insertions with testInsertReadProvider, so insert and
-    // query functionality must also be complete before this test can be used.
+
+//     Student: Uncomment this test after you have completed writing the delete functionality
+//     in your provider.  It relies on insertions with testInsertReadProvider, so insert and
+//     query functionality must also be complete before this test can be used.
 //    public void testDeleteRecords() {
 //        testInsertReadProvider();
 //
@@ -427,8 +428,8 @@ public class TestProvider extends AndroidTestCase {
 //        mContext.getContentResolver().unregisterContentObserver(locationObserver);
 //        mContext.getContentResolver().unregisterContentObserver(weatherObserver);
 //    }
-
-
+//
+//
     static private final int BULK_INSERT_RECORDS_TO_INSERT = 10;
     static ContentValues[] createBulkInsertWeatherValues(long locationRowId) {
         long currentTestDate = TestUtilities.TEST_DATE;
@@ -511,7 +512,7 @@ public class TestProvider extends AndroidTestCase {
 //        // we should have as many records in the database as we've inserted
 //        assertEquals(cursor.getCount(), BULK_INSERT_RECORDS_TO_INSERT);
 //
-//        // and let's make sure they match the ones we created
+//        // and let's maketestInsertReadProvider sure they match the ones we created
 //        cursor.moveToFirst();
 //        for ( int i = 0; i < BULK_INSERT_RECORDS_TO_INSERT; i++, cursor.moveToNext() ) {
 //            TestUtilities.validateCurrentRecord("testBulkInsert.  Error validating WeatherEntry " + i,

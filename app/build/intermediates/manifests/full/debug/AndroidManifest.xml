@@ -10,10 +10,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <provider
-        android:name="com.example.android.sunshine.app.data.WeatherProvider"
-        android:authorities="com.example.android.sunshine.app" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -46,6 +42,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.sunshine.app.MainActivity" />
         </activity>
+
+        <provider
+            android:name="com.example.android.sunshine.app.data.WeatherProvider"
+            android:authorities="com.example.android.sunshine.app" />
     </application>
 
 </manifest>

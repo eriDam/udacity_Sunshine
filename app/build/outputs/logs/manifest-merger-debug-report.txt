@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:2:1-46:12
+ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:2:1-48:12
 	xmlns:android
 		ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -18,7 +18,7 @@ ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManif
 	android:name
 		ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:8:5-44:19
+ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:8:5-46:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] /home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] /home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.0] /home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/AndroidManifest.xml:22:5-20
@@ -77,11 +77,11 @@ ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManif
 	android:name
 		ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:33:13-45
 provider#com.example.android.sunshine.app.data.WeatherProvider
-ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:40:9-42:52
+ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:42:9-44:52
 	android:authorities
-		ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:41:13-67
+		ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:43:13-67
 	android:name
-		ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:42:13-49
+		ADDED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml:44:13-49
 uses-sdk
 INJECTED from /home/eridev/AndroidStudioProjects/Sunshine/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.0] /home/eridev/AndroidStudioProjects/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:20:5-43

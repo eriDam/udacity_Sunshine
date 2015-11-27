@@ -42,7 +42,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.sunshine.app.MainActivity" />
         </activity>
-
+        <!--
+        The provider should write here, if I write in the top document below
+        the permissions, test FAIL
+        -->
         <provider
             android:name="com.example.android.sunshine.app.data.WeatherProvider"
             android:authorities="com.example.android.sunshine.app" />

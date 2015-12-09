@@ -1,10 +1,8 @@
 package com.example.android.sunshine.app;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -15,19 +13,18 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
     private final String LOG_TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 //        if (savedInstanceState == null) {
 //            getSupportFragmentManager().beginTransaction()
 //                    .add(R.id.container, new ForecastFragment())
 //                    .commit();
 //        }
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -49,12 +46,10 @@ public class MainActivity extends AppCompatActivity {
         Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
 
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.forecast_fragment, menu);
+        getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
@@ -70,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, SettingsActivity.class));
             return true;
         }
+
         if (id == R.id.action_map) {
             openPreferredLocationInMap();
             return true;
@@ -78,11 +74,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openPreferredLocationInMap() {
-        SharedPreferences sharedPrefs =
-                PreferenceManager.getDefaultSharedPreferences(this);
-        String location = sharedPrefs.getString(
-                getString(R.string.pref_location_key),
-                getString(R.string.pref_location_default));
+        String location = Utility.getPreferredLocation(this);
 
         // Using the URI scheme for showing a location found on a map.  This super-handy
         // intent can is detailed in the "Common Intents" page of Android's developer site:
@@ -100,70 +92,4 @@ public class MainActivity extends AppCompatActivity {
             Log.d(LOG_TAG, "Couldn't call " + location + ", no receiving apps installed!");
         }
     }
-
-    //Generamos e incorporamos los metodos de Log, automaticamente desde botón dcho source-Override/Implement methodes
-    //Override, en realidad ni sobrecarga ni sustituye, le dice al compilador que haga caso a este método y no al del padre
-    @Override
-    protected void onStart() {
-        // TODO Auto-generated method stub
-        super.onStart();
-        Log.i(LOG_TAG, "onStart");
-        Log.d(LOG_TAG, "Debug");
-        Log.e(LOG_TAG, "Error");
-        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
-        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
-    }
-
-    @Override
-    protected void onResume() {
-        // TODO Auto-generated method stub
-        super.onResume();
-        Log.i(LOG_TAG, "onResume");
-        Log.d(LOG_TAG, "Debug");
-        Log.e(LOG_TAG, "Error");
-        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
-        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
-    }
-        @Override
-        protected void onPause () {
-            // TODO Auto-generated method stub
-            super.onPause();
-            Log.i(LOG_TAG, "onPause");
-            Log.d(LOG_TAG, "Debug");
-            Log.e(LOG_TAG, "Error");
-            Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
-            Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
-        }
-
-        @Override
-        protected void onStop () {
-            // TODO Auto-generated method stub
-            super.onStop();
-            Log.i(LOG_TAG, "onStop");
-            Log.d(LOG_TAG, "Debug");
-            Log.e(LOG_TAG, "Error");
-            Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
-            Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
-        }
-
-        @Override
-        protected void onRestart () {
-            // TODO Auto-generated method stub
-            super.onRestart();
-            Log.i(LOG_TAG, "onRestart");
-            Log.d(LOG_TAG, "Debug");
-            Log.e(LOG_TAG, "Error");
-            Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
-            Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
-        }
-        @Override
-        protected void onDestroy () {
-            // TODO Auto-generated method stub
-            super.onDestroy();
-            Log.i(LOG_TAG, "onDestroy");
-            Log.d(LOG_TAG, "Debug");
-            Log.e(LOG_TAG, "Error");
-            Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
-            Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
-        }
-    }
+}

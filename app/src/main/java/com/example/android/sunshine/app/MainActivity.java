@@ -41,14 +41,6 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        //The Log is the tool to control or to debug our app
-        //They are nothing more than reading what is happening in our application.
-        //Log incorporate the end of each method activity android
-        Log.i(LOG_TAG, "on create");
-        Log.d(LOG_TAG, "Debug");
-        Log.e(LOG_TAG, "Error");
-        Log.v(LOG_TAG, "Mensaje de Registro - Verbose Log");
-        Log.w(LOG_TAG, "Mensaje de Advertencia - Warn");
 
     }
     @Override

@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.sunshine.app"
     android:versionCode="1"
-    android:versionName="1.0" >
-
+    android:versionName="1.0" > <!-- <permission -->
+    <!-- android:name="com.example.LIENSE_TO_KILL" -->
+    <!-- android:protectionLevel="dangerous" -->
+    <!-- android:label="Licenced to Kill"/> -->
     <uses-sdk
         android:minSdkVersion="17"
         android:targetSdkVersion="23" />
@@ -49,6 +51,15 @@
         <provider
             android:name="com.example.android.sunshine.app.data.WeatherProvider"
             android:authorities="com.example.android.sunshine.app" />
+
+        <!-- <provider -->
+        <!-- android:authorities="com.example.android.sunshine.app" -->
+        <!-- android:name=".data.WeatherProvider" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="com.example.LICENSE_TO_KILL" -->
+        <!-- /> -->
+
     </application>
 
 </manifest>

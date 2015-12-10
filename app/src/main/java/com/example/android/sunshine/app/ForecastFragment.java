@@ -38,7 +38,7 @@ import com.example.android.sunshine.app.data.WeatherContract;
  * Encapsulates fetching the forecast and displaying it as a {@link ListView} layout.
  */
 public class ForecastFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor> {
-
+    private static final String LOG_TAG = ForecastFragment.class.getSimpleName();
     private static final int FORECAST_LOADER = 0;
         // For the forecast view we're showing only a small subset of the stored data.
         // Specify the columns we need.

@@ -6,7 +6,8 @@
     android:gravity="center_vertical"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#4c5db9">
 
     <LinearLayout
         android:layout_height="wrap_content"
@@ -18,17 +19,23 @@
         <TextView
             android:id="@+id/list_item_date_textview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="#fdfafa"
+            android:textSize="22dp" />
 
         <TextView
             android:id="@+id/list_item_high_textview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="#fdfafa"
+            android:textSize="96sp" />
 
         <TextView
             android:id="@+id/list_item_low_textview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="#9e9fa3"
+            android:textSize="48sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -46,6 +53,9 @@
         <TextView
             android:id="@+id/list_item_forecast_textview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="#fcf9f9"
+            android:textIsSelectable="false" />
     </LinearLayout>
 </LinearLayout>
